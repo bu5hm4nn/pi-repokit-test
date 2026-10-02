@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "connection": {
+    "provider": "github",
+    "remote": "git@github.com:bu5hm4nn/pi-repokit-test.git",
+    "origin": "https://github.com",
+    "repository": "bu5hm4nn/pi-repokit-test"
+  },
+  "pollSeconds": 30,
+  "lifetimeMinutes": 120,
+  "ignoredBodyPatterns": {
+    "repokit_subscribe": [
+      "^Preparing review\\.+$",
+      "^\\*\\*\\[Persistent review\\]\\(https?://"
+    ]
+  }
+}
