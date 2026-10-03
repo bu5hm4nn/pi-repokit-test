@@ -1,0 +1,13 @@
+name: ci-fixture-fail
+on:
+  push:
+    branches: ["case/ci"]
+  workflow_dispatch:
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: fail
+        run: |
+          echo "ci fixture fail"
+          exit 1

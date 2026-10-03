@@ -1,0 +1,11 @@
+name: ci-fixture-pass
+on:
+  push:
+    branches: ["case/ci"]
+  workflow_dispatch:
+jobs:
+  pass:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pass
+        run: echo "ci fixture pass"
